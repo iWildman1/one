@@ -1,0 +1,41 @@
+body.homepage {
+    display: flex;
+}
+
+.body-center {
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-group-half {
+    width: 50%;
+    float: left;
+
+    a {
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.button {
+    background-color: $accentColour;
+    padding: 7px;
+    width: 140px;
+    color: white;
+    font-weight: 300;
+    border: 5px solid $accentColour;
+
+    transition: all 0.1s ease;
+
+    &:hover {
+        background-color: lighten($accentColour, 8%) !important;
+        border: 5px solid lighten($accentColour, 8%);
+    }
+}
+
+.button.button-secondary {
+    background-color: transparent;
+}

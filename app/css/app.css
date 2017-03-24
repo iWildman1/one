@@ -1,0 +1,74 @@
+/* MAIN SCSS FILE. DO NOT ADD STYLES INTO HERE, PLEASE USE THE RELEVANT PARTIALS FILE */
+/* BASE SCSS PARTIAL. USE FOR BASE STYLE CONFIGURATION */
+* {
+  box-sizing: border-box; }
+
+/* TYPOGRAPHY SCSS PARTIAL. ANY CODE RELATED TO FONTS GOES IN HERE */
+h1, h2, h3, h4, h5, h6, strong, p, a {
+  font-family: "Montserrat", sans-serif; }
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400; }
+
+html {
+  font-size: 17px; }
+
+h1 {
+  font-weight: 600; }
+
+.main-lead {
+  margin-top: 0; }
+
+body.homepage {
+  display: flex; }
+
+.body-center {
+  align-self: center;
+  margin: 0 auto;
+  text-align: center; }
+
+.button-group-half {
+  width: 50%;
+  float: left; }
+  .button-group-half a:hover {
+    color: white;
+    text-decoration: none; }
+
+.button {
+  background-color: #DB5656;
+  padding: 7px;
+  width: 140px;
+  color: white;
+  font-weight: 300;
+  border: 5px solid #DB5656;
+  transition: all 0.1s ease; }
+  .button:hover {
+    background-color: #e27878 !important;
+    border: 5px solid #e27878; }
+
+.button.button-secondary {
+  background-color: transparent; }
+
+/* HOMEPAGE-SPECIFIC STYLES. IF HOMEPAGE STYLES DON'T FIT INTO ANOTHER CATEGORY, PUT THEM HERE */
+body.homepage {
+  background: linear-gradient(rgba(93, 34, 34, 0.47), rgba(93, 34, 34, 0.47)), url("/img/background-main.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white; }
+  body.homepage h1.main-lead {
+    font-size: 11em; }
+  body.homepage p {
+    font-size: 1.3em;
+    font-weight: 300; }
+
+.button-group {
+  margin-top: 20px; }
+
+.home-cta:first-child {
+  margin-right: 10px; }
+
+.home-cta:last-child {
+  margin-left: 10px; }

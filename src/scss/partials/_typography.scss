@@ -1,0 +1,23 @@
+/* TYPOGRAPHY SCSS PARTIAL. ANY CODE RELATED TO FONTS GOES IN HERE */
+
+h1, h2, h3, h4, h5, h6, strong, p, a {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+html {
+    font-size: 17px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.main-lead {
+    margin-top: 0;
+}

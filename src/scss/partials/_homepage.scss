@@ -1,0 +1,33 @@
+/* HOMEPAGE-SPECIFIC STYLES. IF HOMEPAGE STYLES DON'T FIT INTO ANOTHER CATEGORY, PUT THEM HERE */
+
+body.homepage {
+    background: linear-gradient(rgba(93, 34, 34, 0.47), rgba(93, 34, 34, 0.47)), url('/img/background-main.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+
+    h1.main-lead {
+        font-size: 11em;
+    }
+
+    p {
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.home-cta {
+
+    &:first-child {
+        margin-right: 10px;
+    }
+
+    &:last-child {
+        margin-left: 10px;
+    }
+}
