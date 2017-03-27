@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 /* TYPOGRAPHY SCSS PARTIAL. ANY CODE RELATED TO FONTS GOES IN HERE */
-h1, h2, h3, h4, h5, h6, strong, p, a {
+h1, h2, h3, h4, h5, h6, strong, p, a, label, input {
   font-family: "Montserrat", sans-serif; }
 
 * {
@@ -72,3 +72,50 @@ body.homepage {
 
 .home-cta:last-child {
   margin-left: 10px; }
+
+.left-holder-container {
+  height: 100%;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.left-holder-container.login-background {
+  background-image: linear-gradient(rgba(93, 34, 34, 0.47), rgba(93, 34, 34, 0.47)), url("/img/login-background.jpg"); }
+
+.left-holder-container.register-background {
+  background-image: linear-gradient(rgba(93, 34, 34, 0.47), rgba(93, 34, 34, 0.47)), url("/img/register-background.jpg"); }
+
+.right-holder-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 450px;
+  background-color: white;
+  padding: 40px; }
+  .right-holder-container h1 {
+    font-weight: 700;
+    font-size: 4em;
+    margin-bottom: 20px; }
+  .right-holder-container p {
+    color: #A5A5A5;
+    font-weight: 300;
+    margin-bottom: 50px; }
+  .right-holder-container form label {
+    text-transform: uppercase;
+    margin-bottom: -60px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: 600; }
+  .right-holder-container form input[type='text'], .right-holder-container form input[type='password'] {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 23px 10px 5px 10px;
+    font-weight: 300;
+    color: #404250;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px; }
+  .right-holder-container form .button {
+    margin-top: 30px; }
