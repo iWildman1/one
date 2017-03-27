@@ -1,0 +1,141 @@
+.admin {
+    background-color: #F8F8F8;
+}
+
+nav {
+    height: 70px;
+    background-color: #393939;
+
+    .nav-container {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                color: white;
+                font-weight: 300;
+                padding-left: 10px;
+            }
+
+            li.nav-username {
+                font-weight: 600;
+            }
+
+            .nav-button {
+                background-color: $accentColour;
+                padding: 8px 14px;
+                margin-left: 10px;
+                color: white;
+                transition: all 0.1s ease;
+                
+                &:hover {
+                    background-color: lighten($accentColour, 8%);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+#main-admin-body {
+    width: 80%;
+    margin: 80px auto;
+
+    .project-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .add-new-button {
+        padding: 6px 14px;
+        margin-left: 30px;
+        background-color: #3ebba1;
+        color: white;
+        transition: all 0.1s ease;
+
+        &:hover {
+            text-decoration: none;
+            background-color: lighten(#3ebba1, 15%);
+        }
+    }
+
+    .deployment-block {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            margin-top: 0;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .deployment-left {
+            .deployment-data-table {
+
+                font-size: 0.95em;
+
+                th, td {
+                    padding: 0 10px;
+                }
+
+                td {
+                    font-weight: 300;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .deployment-right {
+            .button-admin {
+                padding: 10px 20px;
+                color: white;
+                transition: all 0.1s ease;
+
+                &:hover {
+                    text-decoration: none;
+                }
+                
+                &.button-force {
+                    background-color: #db9456;
+
+                    &:hover {
+                        background-color: lighten(#db9456, 10%);
+                    }
+
+                }
+
+                &.button-delete {
+                    background-color: $accentColour;
+
+                    &:hover {
+                        background-color: lighten($accentColour, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 /* TYPOGRAPHY SCSS PARTIAL. ANY CODE RELATED TO FONTS GOES IN HERE */
-h1, h2, h3, h4, h5, h6, strong, p, a, label, input {
+h1, h2, h3, h4, h5, h6, strong, p, a, label, input, li, table, th, td {
   font-family: "Montserrat", sans-serif; }
 
 * {
@@ -119,3 +119,92 @@ body.homepage {
     border-radius: 5px; }
   .right-holder-container form .button {
     margin-top: 30px; }
+
+.admin {
+  background-color: #F8F8F8; }
+
+nav {
+  height: 70px;
+  background-color: #393939; }
+  nav .nav-container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center; }
+    nav .nav-container h1 {
+      color: white;
+      margin: 0;
+      padding: 0; }
+    nav .nav-container .nav-list {
+      list-style-type: none;
+      margin: 0; }
+      nav .nav-container .nav-list li {
+        display: inline-block;
+        color: white;
+        font-weight: 300;
+        padding-left: 10px; }
+      nav .nav-container .nav-list li.nav-username {
+        font-weight: 600; }
+      nav .nav-container .nav-list .nav-button {
+        background-color: #DB5656;
+        padding: 8px 14px;
+        margin-left: 10px;
+        color: white;
+        transition: all 0.1s ease; }
+        nav .nav-container .nav-list .nav-button:hover {
+          background-color: #e27878;
+          text-decoration: none; }
+
+#main-admin-body {
+  width: 80%;
+  margin: 80px auto; }
+  #main-admin-body .project-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  #main-admin-body h1 {
+    display: inline-block;
+    margin-top: 10px; }
+  #main-admin-body .add-new-button {
+    padding: 6px 14px;
+    margin-left: 30px;
+    background-color: #3ebba1;
+    color: white;
+    transition: all 0.1s ease; }
+    #main-admin-body .add-new-button:hover {
+      text-decoration: none;
+      background-color: #74d1be; }
+  #main-admin-body .deployment-block {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #main-admin-body .deployment-block h2 {
+      margin-top: 0;
+      font-weight: 600;
+      margin-bottom: 30px; }
+    #main-admin-body .deployment-block .deployment-left .deployment-data-table {
+      font-size: 0.95em; }
+      #main-admin-body .deployment-block .deployment-left .deployment-data-table th, #main-admin-body .deployment-block .deployment-left .deployment-data-table td {
+        padding: 0 10px; }
+      #main-admin-body .deployment-block .deployment-left .deployment-data-table td {
+        font-weight: 300;
+        opacity: 0.7; }
+    #main-admin-body .deployment-block .deployment-right .button-admin {
+      padding: 10px 20px;
+      color: white;
+      transition: all 0.1s ease; }
+      #main-admin-body .deployment-block .deployment-right .button-admin:hover {
+        text-decoration: none; }
+      #main-admin-body .deployment-block .deployment-right .button-admin.button-force {
+        background-color: #db9456; }
+        #main-admin-body .deployment-block .deployment-right .button-admin.button-force:hover {
+          background-color: #e4af80; }
+      #main-admin-body .deployment-block .deployment-right .button-admin.button-delete {
+        background-color: #DB5656; }
+        #main-admin-body .deployment-block .deployment-right .button-admin.button-delete:hover {
+          background-color: #e48080; }
