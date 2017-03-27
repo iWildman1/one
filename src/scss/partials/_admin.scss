@@ -5,6 +5,9 @@
 nav {
     height: 70px;
     background-color: #393939;
+    position: fixed;
+    width: 100%;
+    top: 0;
 
     .nav-container {
         display: flex;
@@ -53,7 +56,7 @@ nav {
 
 #main-admin-body {
     width: 80%;
-    margin: 80px auto;
+    margin: 120px auto;
 
     .project-info {
         display: flex;
@@ -76,6 +79,14 @@ nav {
         &:hover {
             text-decoration: none;
             background-color: lighten(#3ebba1, 15%);
+        }
+
+        &.overview-button {
+            background-color: $accentColour;
+
+            &:hover {
+                background-color: lighten($accentColour, 10%);
+            }
         }
     }
 
@@ -135,7 +146,62 @@ nav {
                         background-color: lighten($accentColour, 10%);
                     }
                 }
+
+                &.button-edit {
+                    background-color: #569DDB;
+
+                    &:hover {
+                        background-color: lighten(#569DDB, 10%);
+                    }
+                }
             }
         }
     }
+}
+
+.add-project-form {
+    background-color: white;
+    padding: 30px;
+
+    h2 {
+        margin-top: 0;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .form-splitter {
+        margin-top: 30px;
+    }
+
+    label {
+        text-transform: uppercase;
+        margin-bottom: -50px;
+        margin-left: 10px;
+        padding-top: 7px;
+    }
+
+    input[type='text'], input[type='password'] {
+        display: block;
+        width: 100%;
+        padding: 20px 10px 5px 10px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #CCCCCC;
+    }
+
+    input[type='submit'] {
+        background-color: #3ebba1;
+        border: none;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+        transition: all 0.1s ease;
+
+        &:hover {
+            background-color: lighten(#3ebba1, 10%);
+        }
+    }
+
 }

@@ -125,7 +125,10 @@ body.homepage {
 
 nav {
   height: 70px;
-  background-color: #393939; }
+  background-color: #393939;
+  position: fixed;
+  width: 100%;
+  top: 0; }
   nav .nav-container {
     display: flex;
     width: 90%;
@@ -159,7 +162,7 @@ nav {
 
 #main-admin-body {
   width: 80%;
-  margin: 80px auto; }
+  margin: 120px auto; }
   #main-admin-body .project-info {
     display: flex;
     justify-content: flex-start;
@@ -176,6 +179,10 @@ nav {
     #main-admin-body .add-new-button:hover {
       text-decoration: none;
       background-color: #74d1be; }
+    #main-admin-body .add-new-button.overview-button {
+      background-color: #DB5656; }
+      #main-admin-body .add-new-button.overview-button:hover {
+        background-color: #e48080; }
   #main-admin-body .deployment-block {
     background-color: white;
     padding: 20px;
@@ -208,3 +215,40 @@ nav {
         background-color: #DB5656; }
         #main-admin-body .deployment-block .deployment-right .button-admin.button-delete:hover {
           background-color: #e48080; }
+      #main-admin-body .deployment-block .deployment-right .button-admin.button-edit {
+        background-color: #569DDB; }
+        #main-admin-body .deployment-block .deployment-right .button-admin.button-edit:hover {
+          background-color: #80b5e4; }
+
+.add-project-form {
+  background-color: white;
+  padding: 30px; }
+  .add-project-form h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 600; }
+  .add-project-form .form-splitter {
+    margin-top: 30px; }
+  .add-project-form label {
+    text-transform: uppercase;
+    margin-bottom: -50px;
+    margin-left: 10px;
+    padding-top: 7px; }
+  .add-project-form input[type='text'], .add-project-form input[type='password'] {
+    display: block;
+    width: 100%;
+    padding: 20px 10px 5px 10px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC; }
+  .add-project-form input[type='submit'] {
+    background-color: #3ebba1;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    transition: all 0.1s ease; }
+    .add-project-form input[type='submit']:hover {
+      background-color: #61cbb5; }

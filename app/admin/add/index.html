@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One - Add/Edit Project</title>
+
+    <!-- MONTSERRAT FONT IMPORT -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- COMPILED CSS OVERRIDE FILE -->
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body class="admin">
+
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="brand">one.</h1>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li class="nav-username">Daniel Wildman</li>
+                    <li>Dashboard</li>
+                    <li>Settings</li>
+                    <li>
+                        <a href="#" class="nav-button">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main-admin-body">
+        <div class="project-info">
+            <h1>Add/Edit Project</h1>
+            <a href="/admin/" class="add-new-button overview-button">Back to overview</a>
+        </div>
+        
+        <div class="add-project-form">
+            <form action="#" id="add-proect">
+                <h2>General Project Info</h2>
+                
+                <label for="project-name">Project Name</label>
+                <input type="text" name="project-name" placeholder="Deployment 1">
+
+                <label for="project-manager">Project Manager</label>
+                <input type="text" name="project-manager" placeholder="Firstname Lastname">
+
+                <h2 class="form-splitter">Deployment Info</h2>
+                
+                <label for="github-repo">GitHub Repo</label>
+                <input type="text" name="github-repo" placeholder="Repo Name">
+
+                <label for="github-branch">GitHub Branch</label>
+                <input type="text" name="github-branch" placeholder="Master">
+
+                <div class="half">
+                    <label for="ftp-server">FTP Server</label>
+                    <input type="text" name="ftp-server" placeholder="ftp.server.com">
+                </div>
+
+                <div class="half">
+                    <label for="ftp-port">FTP Port</label>
+                    <input type="text" name="ftp-port" placeholder="21">
+                </div>
+
+                <div class="half">
+                    <label for="ftp-username">FTP Username</label>
+                    <input type="text" name="ftp-username" placeholder="username">
+                </div>
+
+                <div class="half">
+                    <label for="ftp-password">FTP Password</label>
+                    <input type="password" name="ftp-password" placeholder="Password">
+                </div>
+
+                <input type="submit" class="new-update-submit" value="Add/Update Deployment">
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="/js/init.js"></script>
+</body>
+</html>
