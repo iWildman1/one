@@ -166,7 +166,8 @@ nav {
   #main-admin-body .project-info {
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 20px; }
   #main-admin-body h1 {
     display: inline-block;
     margin-top: 10px; }
